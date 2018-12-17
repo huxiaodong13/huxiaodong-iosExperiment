@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F2FDC112183F8C9007ACFB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FDC102183F8C9007ACFB9 /* AppDelegate.swift */; };
+		3F2FDC132183F8C9007ACFB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FDC122183F8C9007ACFB9 /* ViewController.swift */; };
+		3F2FDC162183F8C9007ACFB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2FDC142183F8C9007ACFB9 /* Main.storyboard */; };
+		3F2FDC192183F8C9007ACFB9 /* ThirdBox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FDC172183F8C9007ACFB9 /* ThirdBox.xcdatamodeld */; };
+		3F2FDC1B2183F8CA007ACFB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F2FDC1A2183F8CA007ACFB9 /* Assets.xcassets */; };
+		3F2FDC1E2183F8CA007ACFB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2FDC1C2183F8CA007ACFB9 /* LaunchScreen.storyboard */; };
+		3F2FDC292183F8CA007ACFB9 /* ThirdBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FDC282183F8CA007ACFB9 /* ThirdBoxTests.swift */; };
+		3F2FDC342183F8CA007ACFB9 /* ThirdBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FDC332183F8CA007ACFB9 /* ThirdBoxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F2FDC252183F8CA007ACFB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F2FDC052183F8C9007ACFB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2FDC0C2183F8C9007ACFB9;
+			remoteInfo = ThirdBox;
+		};
+		3F2FDC302183F8CA007ACFB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F2FDC052183F8C9007ACFB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2FDC0C2183F8C9007ACFB9;
+			remoteInfo = ThirdBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F2FDC0D2183F8C9007ACFB9 /* ThirdBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirdBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2FDC102183F8C9007ACFB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F2FDC122183F8C9007ACFB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F2FDC152183F8C9007ACFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F2FDC182183F8C9007ACFB9 /* ThirdBox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThirdBox.xcdatamodel; sourceTree = "<group>"; };
+		3F2FDC1A2183F8CA007ACFB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F2FDC1D2183F8CA007ACFB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F2FDC1F2183F8CA007ACFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F2FDC242183F8CA007ACFB9 /* ThirdBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2FDC282183F8CA007ACFB9 /* ThirdBoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdBoxTests.swift; sourceTree = "<group>"; };
+		3F2FDC2A2183F8CA007ACFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F2FDC2F2183F8CA007ACFB9 /* ThirdBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2FDC332183F8CA007ACFB9 /* ThirdBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdBoxUITests.swift; sourceTree = "<group>"; };
+		3F2FDC352183F8CA007ACFB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F2FDC0A2183F8C9007ACFB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2FDC212183F8CA007ACFB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2FDC2C2183F8CA007ACFB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F2FDC042183F8C9007ACFB9 = {
+			isa = PBXGroup;
+			children = (
+				3F2FDC0F2183F8C9007ACFB9 /* ThirdBox */,
+				3F2FDC272183F8CA007ACFB9 /* ThirdBoxTests */,
+				3F2FDC322183F8CA007ACFB9 /* ThirdBoxUITests */,
+				3F2FDC0E2183F8C9007ACFB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F2FDC0E2183F8C9007ACFB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F2FDC0D2183F8C9007ACFB9 /* ThirdBox.app */,
+				3F2FDC242183F8CA007ACFB9 /* ThirdBoxTests.xctest */,
+				3F2FDC2F2183F8CA007ACFB9 /* ThirdBoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F2FDC0F2183F8C9007ACFB9 /* ThirdBox */ = {
+			isa = PBXGroup;
+			children = (
+				3F2FDC102183F8C9007ACFB9 /* AppDelegate.swift */,
+				3F2FDC122183F8C9007ACFB9 /* ViewController.swift */,
+				3F2FDC142183F8C9007ACFB9 /* Main.storyboard */,
+				3F2FDC1A2183F8CA007ACFB9 /* Assets.xcassets */,
+				3F2FDC1C2183F8CA007ACFB9 /* LaunchScreen.storyboard */,
+				3F2FDC1F2183F8CA007ACFB9 /* Info.plist */,
+				3F2FDC172183F8C9007ACFB9 /* ThirdBox.xcdatamodeld */,
+			);
+			path = ThirdBox;
+			sourceTree = "<group>";
+		};
+		3F2FDC272183F8CA007ACFB9 /* ThirdBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F2FDC282183F8CA007ACFB9 /* ThirdBoxTests.swift */,
+				3F2FDC2A2183F8CA007ACFB9 /* Info.plist */,
+			);
+			path = ThirdBoxTests;
+			sourceTree = "<group>";
+		};
+		3F2FDC322183F8CA007ACFB9 /* ThirdBoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F2FDC332183F8CA007ACFB9 /* ThirdBoxUITests.swift */,
+				3F2FDC352183F8CA007ACFB9 /* Info.plist */,
+			);
+			path = ThirdBoxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F2FDC0C2183F8C9007ACFB9 /* ThirdBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2FDC382183F8CA007ACFB9 /* Build configuration list for PBXNativeTarget "ThirdBox" */;
+			buildPhases = (
+				3F2FDC092183F8C9007ACFB9 /* Sources */,
+				3F2FDC0A2183F8C9007ACFB9 /* Frameworks */,
+				3F2FDC0B2183F8C9007ACFB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThirdBox;
+			productName = ThirdBox;
+			productReference = 3F2FDC0D2183F8C9007ACFB9 /* ThirdBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F2FDC232183F8CA007ACFB9 /* ThirdBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2FDC3B2183F8CA007ACFB9 /* Build configuration list for PBXNativeTarget "ThirdBoxTests" */;
+			buildPhases = (
+				3F2FDC202183F8CA007ACFB9 /* Sources */,
+				3F2FDC212183F8CA007ACFB9 /* Frameworks */,
+				3F2FDC222183F8CA007ACFB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F2FDC262183F8CA007ACFB9 /* PBXTargetDependency */,
+			);
+			name = ThirdBoxTests;
+			productName = ThirdBoxTests;
+			productReference = 3F2FDC242183F8CA007ACFB9 /* ThirdBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F2FDC2E2183F8CA007ACFB9 /* ThirdBoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F2FDC3E2183F8CA007ACFB9 /* Build configuration list for PBXNativeTarget "ThirdBoxUITests" */;
+			buildPhases = (
+				3F2FDC2B2183F8CA007ACFB9 /* Sources */,
+				3F2FDC2C2183F8CA007ACFB9 /* Frameworks */,
+				3F2FDC2D2183F8CA007ACFB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F2FDC312183F8CA007ACFB9 /* PBXTargetDependency */,
+			);
+			name = ThirdBoxUITests;
+			productName = ThirdBoxUITests;
+			productReference = 3F2FDC2F2183F8CA007ACFB9 /* ThirdBoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F2FDC052183F8C9007ACFB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = huxiaodong;
+				TargetAttributes = {
+					3F2FDC0C2183F8C9007ACFB9 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					3F2FDC232183F8CA007ACFB9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3F2FDC0C2183F8C9007ACFB9;
+					};
+					3F2FDC2E2183F8CA007ACFB9 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3F2FDC0C2183F8C9007ACFB9;
+					};
+				};
+			};
+			buildConfigurationList = 3F2FDC082183F8C9007ACFB9 /* Build configuration list for PBXProject "ThirdBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F2FDC042183F8C9007ACFB9;
+			productRefGroup = 3F2FDC0E2183F8C9007ACFB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F2FDC0C2183F8C9007ACFB9 /* ThirdBox */,
+				3F2FDC232183F8CA007ACFB9 /* ThirdBoxTests */,
+				3F2FDC2E2183F8CA007ACFB9 /* ThirdBoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F2FDC0B2183F8C9007ACFB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2FDC1E2183F8CA007ACFB9 /* LaunchScreen.storyboard in Resources */,
+				3F2FDC1B2183F8CA007ACFB9 /* Assets.xcassets in Resources */,
+				3F2FDC162183F8C9007ACFB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2FDC222183F8CA007ACFB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2FDC2D2183F8CA007ACFB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F2FDC092183F8C9007ACFB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2FDC192183F8C9007ACFB9 /* ThirdBox.xcdatamodeld in Sources */,
+				3F2FDC132183F8C9007ACFB9 /* ViewController.swift in Sources */,
+				3F2FDC112183F8C9007ACFB9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2FDC202183F8CA007ACFB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2FDC292183F8CA007ACFB9 /* ThirdBoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F2FDC2B2183F8CA007ACFB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2FDC342183F8CA007ACFB9 /* ThirdBoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F2FDC262183F8CA007ACFB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F2FDC0C2183F8C9007ACFB9 /* ThirdBox */;
+			targetProxy = 3F2FDC252183F8CA007ACFB9 /* PBXContainerItemProxy */;
+		};
+		3F2FDC312183F8CA007ACFB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F2FDC0C2183F8C9007ACFB9 /* ThirdBox */;
+			targetProxy = 3F2FDC302183F8CA007ACFB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F2FDC142183F8C9007ACFB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F2FDC152183F8C9007ACFB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F2FDC1C2183F8CA007ACFB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F2FDC1D2183F8CA007ACFB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F2FDC362183F8CA007ACFB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F2FDC372183F8CA007ACFB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F2FDC392183F8CA007ACFB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThirdBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-016110313.ThirdBox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F2FDC3A2183F8CA007ACFB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThirdBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-016110313.ThirdBox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F2FDC3C2183F8CA007ACFB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThirdBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-016110313.ThirdBoxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThirdBox.app/ThirdBox";
+			};
+			name = Debug;
+		};
+		3F2FDC3D2183F8CA007ACFB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThirdBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-016110313.ThirdBoxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThirdBox.app/ThirdBox";
+			};
+			name = Release;
+		};
+		3F2FDC3F2183F8CA007ACFB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThirdBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-016110313.ThirdBoxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThirdBox;
+			};
+			name = Debug;
+		};
+		3F2FDC402183F8CA007ACFB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ThirdBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-016110313.ThirdBoxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ThirdBox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F2FDC082183F8C9007ACFB9 /* Build configuration list for PBXProject "ThirdBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2FDC362183F8CA007ACFB9 /* Debug */,
+				3F2FDC372183F8CA007ACFB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F2FDC382183F8CA007ACFB9 /* Build configuration list for PBXNativeTarget "ThirdBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2FDC392183F8CA007ACFB9 /* Debug */,
+				3F2FDC3A2183F8CA007ACFB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F2FDC3B2183F8CA007ACFB9 /* Build configuration list for PBXNativeTarget "ThirdBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2FDC3C2183F8CA007ACFB9 /* Debug */,
+				3F2FDC3D2183F8CA007ACFB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F2FDC3E2183F8CA007ACFB9 /* Build configuration list for PBXNativeTarget "ThirdBoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2FDC3F2183F8CA007ACFB9 /* Debug */,
+				3F2FDC402183F8CA007ACFB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3F2FDC172183F8C9007ACFB9 /* ThirdBox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3F2FDC182183F8C9007ACFB9 /* ThirdBox.xcdatamodel */,
+			);
+			currentVersion = 3F2FDC182183F8C9007ACFB9 /* ThirdBox.xcdatamodel */;
+			path = ThirdBox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3F2FDC052183F8C9007ACFB9 /* Project object */;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThirdBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C9V-cP-4mz">
+                                <rect key="frame" x="0.0" y="79.5" width="667" height="216"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5l8-wI-UBW">
+                                        <rect key="frame" x="0.0" y="0.0" width="215.5" height="216"/>
+                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5l8-wI-UBW" secondAttribute="height" multiplier="1:1" id="A2a-Zb-9mR"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKw-OM-LKO">
+                                        <rect key="frame" x="225.5" y="0.0" width="216" height="216"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="iKw-OM-LKO" secondAttribute="height" multiplier="1:1" id="KJN-bu-Onx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNA-GC-3eg">
+                                        <rect key="frame" x="451.5" y="0.0" width="215.5" height="216"/>
+                                        <color key="backgroundColor" red="0.28084967709907893" green="0.6249960421578199" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bNA-GC-3eg" secondAttribute="height" multiplier="1:1" id="xj3-im-Y2g"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iKw-OM-LKO" firstAttribute="centerX" secondItem="C9V-cP-4mz" secondAttribute="centerX" id="1lZ-cO-445"/>
+                                    <constraint firstItem="bNA-GC-3eg" firstAttribute="centerY" secondItem="C9V-cP-4mz" secondAttribute="centerY" id="2c8-8l-kcD"/>
+                                    <constraint firstItem="bNA-GC-3eg" firstAttribute="centerX" secondItem="C9V-cP-4mz" secondAttribute="centerX" id="CcN-6R-JWI"/>
+                                    <constraint firstAttribute="width" secondItem="iKw-OM-LKO" secondAttribute="width" id="FXt-WB-kmW"/>
+                                    <constraint firstItem="5l8-wI-UBW" firstAttribute="centerY" secondItem="C9V-cP-4mz" secondAttribute="centerY" id="Onp-5V-uyG"/>
+                                    <constraint firstAttribute="width" secondItem="bNA-GC-3eg" secondAttribute="width" id="ktb-Bn-pKv"/>
+                                    <constraint firstAttribute="width" secondItem="5l8-wI-UBW" secondAttribute="width" id="p0a-Ia-PI9"/>
+                                    <constraint firstItem="iKw-OM-LKO" firstAttribute="centerY" secondItem="C9V-cP-4mz" secondAttribute="centerY" id="pzs-M5-740"/>
+                                    <constraint firstItem="5l8-wI-UBW" firstAttribute="centerX" secondItem="C9V-cP-4mz" secondAttribute="centerX" id="rQn-u4-hLA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C9V-cP-4mz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ri5-o6-Ecd"/>
+                            <constraint firstItem="C9V-cP-4mz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="rRo-7G-aX8"/>
+                            <constraint firstItem="C9V-cP-4mz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w9u-9Q-fLY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
