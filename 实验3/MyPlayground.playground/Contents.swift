@@ -42,7 +42,7 @@ let dictionary = ["date": ["beijing": beijing, "dongjing": dongjing, "niuyue": n
 let fileManager = FileManager.default  //获取默认工作路径
 var url1 = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!//获取工作路径下的Document文件夹
 url1.appendPathComponent("text.txt")            //在文件夹下增加一个text.txt
-try? str1.write(to: url1, atomically: true, encoding: String.Encoding)     //写入数据
+try? str1.write(to: url1, atomically: true, encoding: .utf8)     //写入数据
 
 
 //获取工作路径下的Document文件夹
