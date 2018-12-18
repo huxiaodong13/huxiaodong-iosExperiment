@@ -1,86 +1,76 @@
-//: Playground - noun: a place where people can play
-
 import UIKit
+import PlaygroundSupport
 
+//文件缓存处理.1
+ 
+let manager = FileManager.default
+let docPath = manager.urls(for: .documentDirectory, in: .userDomainMask).first?.path
+//输出Documentw路径，方便查看
+print(docPath!)
 
-func getDate(date: Date, zone: Int = 0) -> String {
-           let formatter = DateFormatter()  //实例化格式化类
-           formatter.dateFormat = "yyyy年MM月dd日EEEE aa KK:mm"  //指定格式化的格式
-           formatter.locale = Locale(identifier: "zh_cn")
-           if zone >= 0 { //当传入的为正数时，在东半区
-                       formatter.timeZone = TimeZone(abbreviation: "UTC+\(zone):00")
-               } else {  //当传入的为负数时，在西半区
-                       formatter.timeZone = TimeZone(abbreviation: "UTC\(zone):00")
-               }
-           
-          let dateString = formatter.string(from: now)  //将传入的日期格式化为字符串
-           return dateString
+//图片文件夹.2
+let file = docPath?.appending("/image")
+
+//若该文件夹存在，访问图片文件
+if manager.fileExists(atPath: file!){
+    let img = file?.appending("/img.png") //图片文件
+    if(manager.fileExists(atPath: img!)){
+        //图片存在、则显示在界面上来
+        do{
+            let data = try Data(contentsOf: URL(fileURLWithPath: img!))
+            let image = UIImage(data: data)
+            let imgView = UIImageView(image: image)
+            imgView.frame = CGRect(x: 0, y: 100, width: 400, height: 300)
+            imgView.image = image
+            UIImageView.addSubview(imgView)
+        }catch{
+            print(error)
+        }
+    }
+    else{
+        //图片不存在，从网络上面重新下载一个图片放入
+        let url = URL(string: "https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png")
+        do{
+            let data = try Data(contentsOf: url!)
+            try data.write(to: URL(fileURLWithPath: img!),options: .atomicWrite)
+            print("文件不存在，已重新创建")
+        }catch{
+            print(error)
+        }
+    }
+}
+    //文件夹不存在，重新创建文件夹
+else{
+    do{
+        try manager.createDirectory(atPath: file!, withIntermediateDirectories: true, attributes: nil)
+        print("文件夹不存在，已重新创建")
+    }catch{
+        print(error)
+    }
 }
 
-let now = Date() //获取当前时间日期
 
-let beijing = getDate(date: now, zone: +8)  //获取当前北京的时间
-print("北京: \(beijing)")  //输出北京时间
+//自定制视图
+//创建自定义的UIView
+class MyView: UIView{
+    override func draw(_ rect: CGRect) {
+        let path = UIBezierPath(ovalIn: rect)
+        UIColor.blue.setStroke()//蓝色边界
+        path.stroke()
 
-let tokyo = getDate(date: now, zone: 9)  //获取当前东京的时间
-print("东京: \(tokyo)")  //输出东京时间
+        UIColor.yellow.setFill()//黄色填充
+        path.fill()
 
-let newYork = getDate(date: now, zone: -5)  //获取当前纽约的时间
-print("纽约: \(newYork)")  //输出纽约时间
-
-let london = getDate(date: now)  ////获取当前伦敦的时间
-print("伦敦: \(london)")  //输出伦敦时间
-)
-
-//.2
-var str1:String = "Swift is a powerful and intutive programming language for iOS,OS X,tvOS,and watch OS."
-var str2=(str1 as NSString).substring(with: NSMakeRange(6,20))
-print(str2)
-var str3 = str1.replacingOccurrences(of: "OS", with: "")
-print(str3)
-
-//.3
-let fileManager = FileManager.default
-if var docPath = fileManager.urls(for:.documentDirectory,in:.userDomainMask).first{
-            docPath.appendPathComponent("沙盒.txt")
-            print(docPath.path)
-            try str2.write(to:docPath,atomically:true,encoding:.utf8)
-            let dic = ["beijing":beijing,"tokyo":tokyo,"newYork":newYork,"london":london,"string":str3] as AnyObject
-            print(dic)
-            dic.write(to : docPath,atomically:true)
+        path.move(to: CGPoint(x: rect.size.width/2, y: 0))
+    }
 }
-//.4
-：
-var str4:URL?
-do{
-            let url = URL(string:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1539685397&di=fcdbe457db4e10157df43934301ead65&imgtype=jpg&er=1&src=http%3A%2F%2Fmobile.pic.people.com.cn%2Fthumbs%2F320%2F404%2Fdata%2Fcms%2FNMediaFile%2F2016%2F0531%2FWIRELESS201605310820000474348753920.jpg")
-            let data = try Data(contentsOf:url!)
-            if var docPath = fileManager.urls(for:.documentDirectory,in:.userDomainMask).first{
-                        docPath.appendPathComponent("沙盒2.txt")
-                        str4 = docPath
-                        let picData = data as AnyObject
-                        print(docPath.path)
-                        picData.write(to : docPath,atomically:true)
-                }
-}catch{
-            
-}
-//.5
-var str4:URL?
-do{
-            let url = URL(string : "http://www.weather.com.cn/adat/sk/101270101.html")
-            let data = try Data(contentsOf: url!)
-            
-            let object = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-            if var dic = object as? [String:Any] {
-                        print(dic["weatherinfo"])
-                        if let weather = dic["weatherinfo"] as? [String:Any] {
-                                    print(weather["city"])
-                            }
-                }
-}catch{
-            
-}
+
+//在ViewController中使用自定义的UIView创建一个椭圆
+let view = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 400))//定义一个View
+view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+let oval = MyView(frame: CGRect(x: 100, y: 100, width: 250, height: 200))//自制椭圆
+oval.backgroundColor = UIColor.clear //清空多余的矩形
+view.addSubview(oval)
 
 
 
